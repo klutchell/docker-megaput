@@ -9,12 +9,11 @@ Uses [ubuntu](https://hub.docker.com/_/ubuntu/) base image with [megatools](http
 ## Usage ##
 
 ```bash
-$ docker run -it --rm -v "$(pwd)":/workdir -w /workdir \
+$ docker run -it --rm -v "$(pwd)":/workdir -w /workdir klutchell/megaput \
 --username "testuser@email.com" \
 --password "topsecret" \
 --path "/Root/backups" \
-<file/to/upload> \
-klutchell/megaput
+"file/to/upload"
 ```
 
 ## Parameters ##
