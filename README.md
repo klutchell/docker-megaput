@@ -13,7 +13,7 @@ $ docker run -it --rm -v "$(pwd)":/workdir -w /workdir \
 --username "testuser@email.com" \
 --password "topsecret" \
 --path "/Root/backups" \
-/workdir/<file/to/upload> \
+<file/to/upload> \
 klutchell/megaput
 ```
 
@@ -21,7 +21,7 @@ klutchell/megaput
 
 See the [megaput man page](https://megatools.megous.com/man/megaput.html).
 
-Note that any local paths require ```/workdir``` to be appended before passing in. Also note that only files within current directory and subdirectories will be available.
+Note that only files within current directory and subdirectories will be available.
 
 ## Author ##
 
